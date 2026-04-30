@@ -33,7 +33,7 @@ struct GenerationLoadingView: View {
                     VStack(spacing: 4) {
                         Image(systemName: "waveform")
                             .font(.system(size: 36))
-                            .foregroundStyle(.accent)
+                            .foregroundStyle(Color.accentColor)
                             .symbolEffect(.pulse, options: .repeating)
 
                         Text("\(Int(progress * 100))%")

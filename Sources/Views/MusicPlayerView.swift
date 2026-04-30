@@ -60,9 +60,9 @@ struct MusicPlayerView: View {
             // Progress
             VStack(spacing: 8) {
                 Slider(value: .init(
-                    get: { viewModel.progress },
-                    set: { viewModel.seek(to: $0) }
-                ), in: 0...1)
+                                   get: { viewModel.progress },
+                                   set:{ viewModel.seek(toProgress: $0) }
+                               ), in: 0...1)
                 .tint(coverColor)
                 .padding(.horizontal, 24)
 
@@ -83,8 +83,8 @@ struct MusicPlayerView: View {
             // Controls
             HStack(spacing: 40) {
                 Button(action: {
-                    viewModel.seek(to: max(0, viewModel.currentTime - 15))
-                }) {
+                                    viewModel.seek(toTime: max(0, viewModel.currentTime - 15))
+                                }) {
                     Image(systemName: "gobackward.15")
                         .font(.title2)
                         .foregroundStyle(.primary)
@@ -99,8 +99,8 @@ struct MusicPlayerView: View {
                 }
 
                 Button(action: {
-                    viewModel.seek(to: min(viewModel.duration, viewModel.currentTime + 15))
-                }) {
+                                    viewModel.seek(toTime: min(viewModel.duration, viewModel.currentTime + 15))
+                                }) {
                     Image(systemName: "goforward.15")
                         .font(.title2)
                         .foregroundStyle(.primary)

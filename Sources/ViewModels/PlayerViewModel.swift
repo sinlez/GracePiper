@@ -33,13 +33,13 @@ class PlayerViewModel {
         playerService.togglePlayPause()
     }
 
-    func seek(to progress: Double) {
-        playerService.seek(to: progress)
-    }
+    func seek(toProgress progress: Double) {
+            playerService.seek(toProgress: progress)
+        }
 
-    func seek(to time: TimeInterval) {
-        playerService.seek(to: time)
-    }
+        func seek(toTime time: TimeInterval) {
+            playerService.seek(toTime: time)
+        }
 
     func formatTime(_ time: TimeInterval) -> String {
         playerService.formatTime(time)

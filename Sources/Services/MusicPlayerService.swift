@@ -83,23 +83,24 @@ class MusicPlayerService {
         removePeriodicTimeObserver()
     }
 
-    func seek(to progress: Double) {
-        guard duration > 0 else { return }
-        let targetTime = duration * progress
-        let cmTime = CMTime(seconds: targetTime, preferredTimescale: 600)
-        player?.seek(to: cmTime)
-        self.progress = progress
-        self.currentTime = targetTime
-    }
 
-    func seek(to time: TimeInterval) {
-        let cmTime = CMTime(seconds: time, preferredTimescale: 600)
-        player?.seek(to: cmTime)
-        currentTime = time
-        if duration > 0 {
-            progress = time / duration
+        func seek(toProgress progress: Double) {
+            guard duration > 0 else { return }
+            let targetTime = duration * progress
+            let cmTime = CMTime(seconds: targetTime, preferredTimescale: 600)
+            player?.seek(to: cmTime)
+            self.progress = progress
+            self.currentTime = targetTime
         }
-    }
+
+        func seek(toTime time: TimeInterval) {
+            let cmTime = CMTime(seconds: time, preferredTimescale: 600)
+            player?.seek(to: cmTime)
+            currentTime = time
+            if duration > 0 {
+                progress = time / duration
+            }
+        }
 
     private func addPeriodicTimeObserver() {
         removePeriodicTimeObserver()

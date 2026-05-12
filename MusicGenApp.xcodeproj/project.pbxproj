@@ -7,34 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0515C5AFAAE4D53D312D9ACA /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C1D0B471A1C3F0F421802 /* MusicPlayerView.swift */; };
-		0A88C5A0B7CDE80D6FB3EC3B /* GenerationLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64BCEDC5C41AE7CCE33CE8 /* GenerationLoadingView.swift */; };
-		3AFABF97277EEC7E75895301 /* PromptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6336E6613D32C3ABF26B9E1D /* PromptViewModel.swift */; };
-		3BAFD75CB815CFBA69971F14 /* MusicGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B47F97BAE0798941D2F6C8 /* MusicGenerationService.swift */; };
-		6313C8A9817333078B9B2AFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C4AA96CD51FD9A7A52D60 /* ContentView.swift */; };
-		635E67E044F897ED332E0B1D /* MusicGenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BD261A11CB3077B30BBE5 /* MusicGenApp.swift */; };
-		63981F7E36E4549595704E9A /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723A2053D306FB5E2DE7330 /* PlayerViewModel.swift */; };
-		7988A0B9F6D9F56BCA8FB2CE /* MusicPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965D481398DB2561D0C954D3 /* MusicPlayerService.swift */; };
-		85360DAA5041897361EABDD5 /* PromptInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF108D21A8A66DC52E3044 /* PromptInputView.swift */; };
-		8FC5D9F4E957792603970F01 /* MusicTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE0B5F278390BAC3C51E7B /* MusicTrack.swift */; };
+		B100000000000000000B0001 /* GracePiperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0001 /* GracePiperApp.swift */; };
+		B100000000000000000B0002 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0002 /* Colors.swift */; };
+		B100000000000000000B0003 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0003 /* Typography.swift */; };
+		B100000000000000000B0004 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0004 /* Spacing.swift */; };
+		B100000000000000000B0005 /* MotionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0005 /* MotionConstants.swift */; };
+		B100000000000000000B0006 /* Animation+Sacred.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0006 /* Animation+Sacred.swift */; };
+		B100000000000000000B0007 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0007 /* Color+Hex.swift */; };
+		B100000000000000000B0008 /* View+Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0008 /* View+Glow.swift */; };
 		C439105D3EF979834EFB9A8B /* GenerationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70485A48759B05D0DC776255 /* GenerationStatus.swift */; };
-		DF1A68DBF41805A017471CCE /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC1ABF44733C4C920C6BF2 /* HistoryListView.swift */; };
+		8FC5D9F4E957792603970F01 /* MusicTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE0B5F278390BAC3C51E7B /* MusicTrack.swift */; };
+		B100000000000000000B0009 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0009 /* Mood.swift */; };
+		B10000000000000000B0000A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0000A /* UserProfile.swift */; };
+		3BAFD75CB815CFBA69971F14 /* MusicGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B47F97BAE0798941D2F6C8 /* MusicGenerationService.swift */; };
+		7988A0B9F6D9F56BCA8FB2CE /* MusicPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965D481398DB2561D0C954D3 /* MusicPlayerService.swift */; };
+		B10000000000000000B0000B /* PromptEngineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0000B /* PromptEngineService.swift */; };
+		B10000000000000000B0000C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0000C /* AppState.swift */; };
+		B10000000000000000B0000D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0000D /* AppRouter.swift */; };
+		B10000000000000000B0000E /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0000E /* AudioSessionManager.swift */; };
+		B10000000000000000B0000F /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0000F /* QueueManager.swift */; };
+		B100000000000000000B0010 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0010 /* PrimaryButton.swift */; };
+		B100000000000000000B0011 /* PromptCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0011 /* PromptCard.swift */; };
+		B100000000000000000B0012 /* MoodBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0012 /* MoodBubble.swift */; };
+		B100000000000000000B0013 /* MiniPlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0013 /* MiniPlayerBar.swift */; };
+		B100000000000000000B0014 /* VerseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0014 /* VerseCard.swift */; };
+		B100000000000000000B0015 /* VocalSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0015 /* VocalSelector.swift */; };
+		B100000000000000000B0016 /* GlowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0016 /* GlowBackground.swift */; };
+		B100000000000000000B0017 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0017 /* HistoryListView.swift */; };
+		B100000000000000000B0018 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0018 /* SettingsView.swift */; };
+		B100000000000000000B0019 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000A0019 /* SplashView.swift */; };
+		B10000000000000000B0001A /* OnboardingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0001A /* OnboardingModels.swift */; };
+		B10000000000000000B0001B /* OnboardingSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0001B /* OnboardingSurveyView.swift */; };
+		B10000000000000000B0001C /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0001C /* OnboardingViewModel.swift */; };
+		B10000000000000000B0001D /* MoodSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0001D /* MoodSelectorView.swift */; };
+		B10000000000000000B0001E /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A0001F /* PlayerViewModel.swift */; };
+		B10000000000000000B0001F /* GenerationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A00020 /* GenerationViewModel.swift */; };
+		B10000000000000000B00020 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A00021 /* PlayerView.swift */; };
+		B10000000000000000B00021 /* LyricsFullscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A00022 /* LyricsFullscreenView.swift */; };
+		B10000000000000000B00022 /* GenerationLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000A00023 /* GenerationLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D64BCEDC5C41AE7CCE33CE8 /* GenerationLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationLoadingView.swift; sourceTree = "<group>"; };
-		429BD261A11CB3077B30BBE5 /* MusicGenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicGenApp.swift; sourceTree = "<group>"; };
-		49DC1ABF44733C4C920C6BF2 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
-		55DF108D21A8A66DC52E3044 /* PromptInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptInputView.swift; sourceTree = "<group>"; };
-		6336E6613D32C3ABF26B9E1D /* PromptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptViewModel.swift; sourceTree = "<group>"; };
-		70485A48759B05D0DC776255 /* GenerationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationStatus.swift; sourceTree = "<group>"; };
 		90779B55CFC9E3DC3C55FF25 /* MusicGenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicGenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		923C4AA96CD51FD9A7A52D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A100000000000000000A0001 /* GracePiperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GracePiperApp.swift; sourceTree = "<group>"; };
+		A100000000000000000A0002 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A100000000000000000A0003 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		A100000000000000000A0004 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		A100000000000000000A0005 /* MotionConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionConstants.swift; sourceTree = "<group>"; };
+		A100000000000000000A0006 /* Animation+Sacred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Sacred.swift"; sourceTree = "<group>"; };
+		A100000000000000000A0007 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		A100000000000000000A0008 /* View+Glow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Glow.swift"; sourceTree = "<group>"; };
+		70485A48759B05D0DC776255 /* GenerationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationStatus.swift; sourceTree = "<group>"; };
 		93BE0B5F278390BAC3C51E7B /* MusicTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrack.swift; sourceTree = "<group>"; };
-		965D481398DB2561D0C954D3 /* MusicPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerService.swift; sourceTree = "<group>"; };
-		C723A2053D306FB5E2DE7330 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
-		DE8C1D0B471A1C3F0F421802 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		A100000000000000000A0009 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		A10000000000000000A0000A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F9B47F97BAE0798941D2F6C8 /* MusicGenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicGenerationService.swift; sourceTree = "<group>"; };
+		965D481398DB2561D0C954D3 /* MusicPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerService.swift; sourceTree = "<group>"; };
+		A10000000000000000A0000B /* PromptEngineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptEngineService.swift; sourceTree = "<group>"; };
+		A10000000000000000A0000C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A10000000000000000A0000D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		A10000000000000000A0000E /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		A10000000000000000A0000F /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
+		A100000000000000000A0010 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		A100000000000000000A0011 /* PromptCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCard.swift; sourceTree = "<group>"; };
+		A100000000000000000A0012 /* MoodBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodBubble.swift; sourceTree = "<group>"; };
+		A100000000000000000A0013 /* MiniPlayerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerBar.swift; sourceTree = "<group>"; };
+		A100000000000000000A0014 /* VerseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseCard.swift; sourceTree = "<group>"; };
+		A100000000000000000A0015 /* VocalSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalSelector.swift; sourceTree = "<group>"; };
+		A100000000000000000A0016 /* GlowBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowBackground.swift; sourceTree = "<group>"; };
+		A100000000000000000A0017 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
+		A100000000000000000A0018 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A100000000000000000A0019 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		A10000000000000000A0001A /* OnboardingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModels.swift; sourceTree = "<group>"; };
+		A10000000000000000A0001B /* OnboardingSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSurveyView.swift; sourceTree = "<group>"; };
+		A10000000000000000A0001C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000A0001D /* MoodSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectorView.swift; sourceTree = "<group>"; };
+		A10000000000000000A0001E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A10000000000000000A0001F /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000A00020 /* GenerationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000A00021 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		A10000000000000000A00022 /* LyricsFullscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsFullscreenView.swift; sourceTree = "<group>"; };
+		A10000000000000000A00023 /* GenerationLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -46,21 +99,202 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4C089352F9C2CCE36A26C439 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0001 /* GracePiperApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0001 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0002 /* Colors.swift */,
+				A100000000000000000A0005 /* MotionConstants.swift */,
+				A100000000000000000A0004 /* Spacing.swift */,
+				A100000000000000000A0003 /* Typography.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0002 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0006 /* Animation+Sacred.swift */,
+				A100000000000000000A0007 /* Color+Hex.swift */,
+				A100000000000000000A0008 /* View+Glow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D823886CDDC82D8B113285E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70485A48759B05D0DC776255 /* GenerationStatus.swift */,
+				A100000000000000000A0009 /* Mood.swift */,
+				93BE0B5F278390BAC3C51E7B /* MusicTrack.swift */,
+				A10000000000000000A0000A /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3E1162A2E6F9A3D4C482AFA1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				F9B47F97BAE0798941D2F6C8 /* MusicGenerationService.swift */,
 				965D481398DB2561D0C954D3 /* MusicPlayerService.swift */,
+				A10000000000000000A0000B /* PromptEngineService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		4C089352F9C2CCE36A26C439 /* App */ = {
+		E0A495FCC12F4E3B3BE9141B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				429BD261A11CB3077B30BBE5 /* MusicGenApp.swift */,
+				A10000000000000000A0000C /* AppState.swift */,
+				A10000000000000000A00020 /* GenerationViewModel.swift */,
+				A10000000000000000A0001C /* OnboardingViewModel.swift */,
+				A10000000000000000A0001F /* PlayerViewModel.swift */,
 			);
-			path = App;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0004 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A0000D /* AppRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0005 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A0000E /* AudioSessionManager.swift */,
+				A10000000000000000A0000F /* QueueManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0003 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0016 /* GlowBackground.swift */,
+				A100000000000000000A0013 /* MiniPlayerBar.swift */,
+				A100000000000000000A0012 /* MoodBubble.swift */,
+				A100000000000000000A0010 /* PrimaryButton.swift */,
+				A100000000000000000A0011 /* PromptCard.swift */,
+				A100000000000000000A0014 /* VerseCard.swift */,
+				A100000000000000000A0015 /* VocalSelector.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CA6EABDE350E8D0C822CA096 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0006 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C100000000000000000C0007 /* History */,
+				C10000000000000000C0000C /* Home */,
+				C10000000000000000C0000E /* Loading */,
+				C10000000000000000C0000B /* Mood */,
+				C10000000000000000C0000A /* Onboarding */,
+				C10000000000000000C0000D /* Player */,
+				C100000000000000000C0008 /* Settings */,
+				C100000000000000000C0009 /* Splash */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0009 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0019 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C10000000000000000C0000A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A0001A /* OnboardingModels.swift */,
+				A10000000000000000A0001B /* OnboardingSurveyView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C10000000000000000C0000B /* Mood */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A0001D /* MoodSelectorView.swift */,
+			);
+			path = Mood;
+			sourceTree = "<group>";
+		};
+		C10000000000000000C0000C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A0001E /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0007 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0017 /* HistoryListView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		C10000000000000000C0000D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A00022 /* LyricsFullscreenView.swift */,
+				A10000000000000000A00021 /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		C10000000000000000C0000E /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000A00023 /* GenerationLoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		C100000000000000000C0008 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000A0018 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D27603F0B130BE4DEC2F0F61 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4C089352F9C2CCE36A26C439 /* App */,
+				C100000000000000000C0003 /* Components */,
+				C100000000000000000C0001 /* DesignSystem */,
+				C100000000000000000C0002 /* Extensions */,
+				C100000000000000000C0005 /* Managers */,
+				D823886CDDC82D8B113285E9 /* Models */,
+				C100000000000000000C0004 /* Navigation */,
+				3E1162A2E6F9A3D4C482AFA1 /* Services */,
+				C100000000000000000C0006 /* Screens */,
+				E0A495FCC12F4E3B3BE9141B /* ViewModels */,
+				CA6EABDE350E8D0C822CA096 /* Views */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		A53FFD2E30C3B980AF352B25 = {
@@ -69,48 +303,6 @@
 				D27603F0B130BE4DEC2F0F61 /* Sources */,
 				15CE1EE1F9B8A9BEE93059CF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		CA6EABDE350E8D0C822CA096 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				923C4AA96CD51FD9A7A52D60 /* ContentView.swift */,
-				3D64BCEDC5C41AE7CCE33CE8 /* GenerationLoadingView.swift */,
-				49DC1ABF44733C4C920C6BF2 /* HistoryListView.swift */,
-				DE8C1D0B471A1C3F0F421802 /* MusicPlayerView.swift */,
-				55DF108D21A8A66DC52E3044 /* PromptInputView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D27603F0B130BE4DEC2F0F61 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				4C089352F9C2CCE36A26C439 /* App */,
-				D823886CDDC82D8B113285E9 /* Models */,
-				3E1162A2E6F9A3D4C482AFA1 /* Services */,
-				E0A495FCC12F4E3B3BE9141B /* ViewModels */,
-				CA6EABDE350E8D0C822CA096 /* Views */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		D823886CDDC82D8B113285E9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				70485A48759B05D0DC776255 /* GenerationStatus.swift */,
-				93BE0B5F278390BAC3C51E7B /* MusicTrack.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E0A495FCC12F4E3B3BE9141B /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				C723A2053D306FB5E2DE7330 /* PlayerViewModel.swift */,
-				6336E6613D32C3ABF26B9E1D /* PromptViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,18 +358,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6313C8A9817333078B9B2AFA /* ContentView.swift in Sources */,
-				0A88C5A0B7CDE80D6FB3EC3B /* GenerationLoadingView.swift in Sources */,
+				B100000000000000000B0001 /* GracePiperApp.swift in Sources */,
+				B100000000000000000B0002 /* Colors.swift in Sources */,
+				B100000000000000000B0003 /* Typography.swift in Sources */,
+				B100000000000000000B0004 /* Spacing.swift in Sources */,
+				B100000000000000000B0005 /* MotionConstants.swift in Sources */,
+				B100000000000000000B0006 /* Animation+Sacred.swift in Sources */,
+				B100000000000000000B0007 /* Color+Hex.swift in Sources */,
+				B100000000000000000B0008 /* View+Glow.swift in Sources */,
 				C439105D3EF979834EFB9A8B /* GenerationStatus.swift in Sources */,
-				DF1A68DBF41805A017471CCE /* HistoryListView.swift in Sources */,
-				635E67E044F897ED332E0B1D /* MusicGenApp.swift in Sources */,
+				8FC5D9F4E957792603970F01 /* MusicTrack.swift in Sources */,
+				B100000000000000000B0009 /* Mood.swift in Sources */,
+				B10000000000000000B0000A /* UserProfile.swift in Sources */,
 				3BAFD75CB815CFBA69971F14 /* MusicGenerationService.swift in Sources */,
 				7988A0B9F6D9F56BCA8FB2CE /* MusicPlayerService.swift in Sources */,
-				0515C5AFAAE4D53D312D9ACA /* MusicPlayerView.swift in Sources */,
-				8FC5D9F4E957792603970F01 /* MusicTrack.swift in Sources */,
-				63981F7E36E4549595704E9A /* PlayerViewModel.swift in Sources */,
-				85360DAA5041897361EABDD5 /* PromptInputView.swift in Sources */,
-				3AFABF97277EEC7E75895301 /* PromptViewModel.swift in Sources */,
+				B10000000000000000B0000B /* PromptEngineService.swift in Sources */,
+				B10000000000000000B0000C /* AppState.swift in Sources */,
+				B10000000000000000B0000D /* AppRouter.swift in Sources */,
+				B10000000000000000B0000E /* AudioSessionManager.swift in Sources */,
+				B10000000000000000B0000F /* QueueManager.swift in Sources */,
+				B100000000000000000B0010 /* PrimaryButton.swift in Sources */,
+				B100000000000000000B0011 /* PromptCard.swift in Sources */,
+				B100000000000000000B0012 /* MoodBubble.swift in Sources */,
+				B100000000000000000B0013 /* MiniPlayerBar.swift in Sources */,
+				B100000000000000000B0014 /* VerseCard.swift in Sources */,
+				B100000000000000000B0015 /* VocalSelector.swift in Sources */,
+				B100000000000000000B0016 /* GlowBackground.swift in Sources */,
+				B100000000000000000B0017 /* HistoryListView.swift in Sources */,
+				B100000000000000000B0018 /* SettingsView.swift in Sources */,
+				B100000000000000000B0019 /* SplashView.swift in Sources */,
+				B10000000000000000B0001A /* OnboardingModels.swift in Sources */,
+				B10000000000000000B0001B /* OnboardingSurveyView.swift in Sources */,
+				B10000000000000000B0001C /* OnboardingViewModel.swift in Sources */,
+				B10000000000000000B0001D /* MoodSelectorView.swift in Sources */,
+				B10000000000000000B0001E /* PlayerViewModel.swift in Sources */,
+				B10000000000000000B0001F /* GenerationViewModel.swift in Sources */,
+				B10000000000000000B00020 /* PlayerView.swift in Sources */,
+				B10000000000000000B00021 /* LyricsFullscreenView.swift in Sources */,
+				B10000000000000000B00022 /* GenerationLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
